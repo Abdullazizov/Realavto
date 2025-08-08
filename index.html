@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Avto - Avtomobillar Saloni</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Real Avto</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Bosh sahifa</a></li>
+                <li><a href="#cars" class="nav-link">Avtomobillar</a></li>
+                <li><a href="#about" class="nav-link">Biz haqimizda</a></li>
+                <li><a href="#contact" class="nav-link">Aloqa</a></li>
+                <li><a href="#social" class="nav-link">Ijtimoiy tarmoqlar</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Eng yaxshi avtomobillar eng qulay narxlarda</h2>
+            <div class="services">
+                <div class="service-card" onclick="openTelegram()">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Naxt Savdo</h3>
+                    <p>To'liq naxt to'lovga barcha turdagi avtomobillarni bizdan <br> topishingiz mumkin</p>
+                </div>
+                <div class="service-card" onclick="openTelegram2()">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Nasiya Savdo</h3>
+                    <p>Qulay nasiya savdo bilan ishingiz oson va tez bitadi </p>
+                </div>
+                <div class="service-card" onclick="openTelegram3()">
+                    <i class="fas fa-car"></i>
+                    <h3>Avtokredit</h3>
+                    <p>Haqiqiy, ishonchli avtomobil savdosi — kredit va bank orqali.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section class="cars-section" id="cars">
+        <div class="container">
+            <h2 class="section-title">Avtomobillar</h2>
+            <div class="cars-grid">
+                <!-- Car 1 -->
+                <div class="car-card">
+                    <img src="./assets/Avtosalo.jpg" alt="Chevrolet Malibu" class="car-image">
+                    <div class="car-info">
+                        <h3 class="car-title">Birlamchi avtosalondan yangi avtomobillar</h3>
+                     
+                    </div>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="car-card">
+                    <img src="./assets/Gentra.jpg" alt="Toyota Camry" class="car-image">
+                    <div class="car-info">
+                        <h3 class="car-title">Ikkilamchi bozordan avtomobillar</h3>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="car-card">
+                    <img src="./assets/Trade-in.png" alt="Honda Accord" class="car-image">
+                    <div class="car-info">
+                        <h3 class="car-title">Trade-in "almashish" xizmati</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="telegram-link">
+                <a href="https://t.me/real_auto_uz" class="telegram-btn" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                    Telegram kanalimizda ko'proq avtomobillar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!---- About section ---->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="about-title">Biz haqimizda</h2>
+                <p >Biz bu avtomobil sohasida 2023-yildan beri bozorda faoliyat yuritamiz va 1000 dan ortiq mijozlar bilan ishladik.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="contact-title">Biz bilan bog'laning</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">
+                            <h4>Telefon</h4>
+                          <a href="tel:+998998382514">+998 33 404 95 55</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-text">
+                            <h4>Lokatsiya</h4>
+                            <a href="https://maps.apple.com/?ll=41.202497,69.239184" target="_blank">Xaritada ko'rish</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section" id="social">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 1rem;">Bizni Kuzatib Boring</h2>
+            <p style="color: rgba(255,255,255,0.8);">Eng so'nggi yangiliklar va takliflar uchun</p>
+            <div class="social-icons">
+                <a href="https://t.me/real_auto_uz" class="social-icon" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.instagram.com/real_auto_uz?igsh=MTZyY3h6dTRxbGRteg==" class="social-icon" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/@realavto_uz" class="social-icon" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
